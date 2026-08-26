@@ -1,0 +1,242 @@
+:root
+{
+    /* Main Background Color */
+    --background-color: lab(0% 0 0);
+
+    /* Main Text Color */
+    --text-color: rgba(250, 212, 25, 0.795);
+    
+    /* Article Text Size */
+    --Article_Text_Size: 16px;
+    
+    /* Main Font Family */
+    --Main_Font_Family: Arial, sans-serif;
+    
+    /* Hero Section Border Color */
+    --Hero_border-color: oklab(96.479% -0.07575 0.19788);
+}
+
+html 
+{ 
+    /* Smooth Scrolling */
+    scroll-behavior: smooth; 
+}
+
+header
+{
+    /* Header Section */
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    color: var(--text-color);
+    border-color: var(--Hero_border-color);
+    border-style:dashed;
+    width: 99.4%;
+    height: 100%;
+   
+}
+
+#hero
+{
+    /* Hero Image Section */
+    width: 100%;
+    height: 40vh;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1
+{
+    /* Planet Buttons Container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+}
+
+/* Planet Button Images */
+.image1
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* Header Text Section */
+#header-text
+{
+    font-size: 20px;
+    color:  var(--text-color);
+    font-family: var(--Main_Font_Family);
+
+}
+
+/* Button Section */
+#Sun_button,
+#Moon_button,
+#Earth_button {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+/* Button hover Section */
+#Sun_button:hover,
+#Moon_button:hover,
+#Earth_button:hover {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--Hero_border-color);
+    background-color: var(--background-color);
+}
+
+/* Button active Section */
+#Sun_button:active,
+#Moon_button:active,
+#Earth_button:active {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    
+    
+
+
+    cursor: pointer;
+    box-shadow: 0 0 30px var(--Hero_border-color);
+    background-color: var(--background-color);
+}
+
+body
+{   /* Body Section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Part 1 */
+#Hero_Box
+{
+    width: 20rem;
+    height: 15rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    object-fit: cover;
+}
+
+#body_box
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#body-text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#body_title
+{
+    flex: 1;
+
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: var(--Main_Font_Family);
+}
+
+#body_article
+{
+    flex: 3;
+
+    font-size: var(--Article_Text_Size);
+    color: var(--text-color);
+    font-family: var(--Main_Font_Family);
+
+    line-height: 1.6;
+}
+
+
+/* Part 2 */
+#Hero_Box2
+{
+    width: 20rem;
+    height: 15rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    object-fit: cover;
+}
+
+#body_title2
+{
+    flex: 1;
+
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: var(--Main_Font_Family);
+}
+
+#body_article2
+{
+    flex:  3;
+
+    font-size: var(--Article_Text_Size);
+    color: var(--text-color);
+    font-family: var(--Main_Font_Family);
+
+    line-height: 1.6;
+}
+
+
+footer
+{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
